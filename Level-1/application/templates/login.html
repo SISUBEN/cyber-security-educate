@@ -1,0 +1,260 @@
+<html dir="ltr" lang="zh-cn" xml:lang="zh-cn" class="yui3-js-enabled"><head>
+    <title>FKYC iLearn: 登录本网站</title>
+    <link rel="shortcut icon" href="https://ilearn.fkyc.edu.hk/pluginfile.php/1/theme_moove/favicon/1663334055/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="moodle, FKYC iLearn: 登录本网站">
+<link rel="stylesheet" type="text/css" href="https://ilearn.fkyc.edu.hk/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css"><script charset="utf-8" id="yui_3_17_2_1_1667129253094_8" src="https://ilearn.fkyc.edu.hk/theme/yui_combo.php?m/1663334055/core/event/event-min.js&amp;m/1663334055/filter_mathjaxloader/loader/loader-min.js" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1667129253094_19" src="https://ilearn.fkyc.edu.hk/theme/yui_combo.php?3.17.2/event-mousewheel/event-mousewheel-min.js&amp;3.17.2/event-resize/event-resize-min.js&amp;3.17.2/event-hover/event-hover-min.js&amp;3.17.2/event-touch/event-touch-min.js&amp;3.17.2/event-move/event-move-min.js&amp;3.17.2/event-flick/event-flick-min.js&amp;3.17.2/event-valuechange/event-valuechange-min.js&amp;3.17.2/event-tap/event-tap-min.js" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://ilearn.fkyc.edu.hk/theme/styles.php/moove/1663334055_1/all">
+
+<meta name="robots" content="noindex">
+<style>
+    .loginform {
+            bottom: 25%;
+            position: relative;
+            top: 25%;
+    }
+
+    <style>.alert-danger, .environmenttable .error {
+        color: #691911;
+        background-color: #f4d6d2;
+        border-color: #f0c5c1;
+    }
+    .alert {
+        position: relative;
+        padding: .75rem 1.25rem;
+        margin-bottom: 1rem;
+        border: 0 solid transparent;
+        border-radius: .5rem;
+    }
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    </style>
+</head>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<body id="page-login-index" class="format-site  path-login chrome dir-ltr lang-zh_cn yui-skin-sam yui3-skin-sam ilearn-fkyc-edu-hk pagelayout-login course-1 context-1 notloggedin moove-login jsenabled jsenabled" _c_t_common="1" _c_t_j1="1">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">跳到主要内容</a>
+</div><script src="https://ilearn.fkyc.edu.hk/lib/javascript.php/1663334055/lib/polyfills/polyfill.js"></script>
+<script src="https://ilearn.fkyc.edu.hk/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://ilearn.fkyc.edu.hk/lib/javascript.php/1663334055/lib/javascript-static.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <div id="page" class="container-fluid mt-0">
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-12">
+                <section id="region-main" class="col-12 h-100" aria-label="内容"><span id="user-notifications"></span>
+                    <div class="login-wrapper" id="yui_3_17_2_1_1667129253094_20">
+                        <div class="login-container">
+                            <div role="main"><span id="maincontent"></span><div class="loginform row hastwocolumns">
+    <div class="col-lg-6 col-md-12 left-column">
+            <div id="loginlogo" class="login-logo">
+                <img id="logoimage" src="https://ilearn.fkyc.edu.hk/pluginfile.php/1/theme_moove/logo/1663334055/logo.png" class="img-fluid" alt="FKYC iLearn">
+                <h1 class="login-heading sr-only">登录到FKYC iLearn</h1>
+
+            </div>
+            <div id="passwd-alert" style="display:none;">
+            <a href="#" id="loginerrormessage" class="sr-only">登录无效，请重试</a>
+            <div class="alert alert-danger" role="alert">登录无效，请重试</div>
+            </div>
+
+
+
+        <form class="login-form" action="login" method="post" id="login">
+            <div class="login-form-username form-group">
+                <label for="username" class="sr-only">
+                        用户名
+                </label>
+                <input type="text" name="username" id="username" class="form-control form-control-lg" placeholder="用户名" autocomplete="username">
+            </div>
+            <div class="login-form-password form-group">
+                <label for="password" class="sr-only">密码</label>
+                <input type="password" name="password" id="password" value="" class="form-control form-control-lg" placeholder="密码" autocomplete="current-password">
+            </div>
+            <div class="login-form-submit form-group">
+                <button class="btn btn-primary btn-block btn-lg login-butn" type="submit" id="loginbtn">登录</button>
+            </div>
+            <div class="login-form-forgotpassword form-group text-center">
+                <a href="https://ilearn.fkyc.edu.hk/login/forgot_password.php">忘记了密码？</a>
+            </div>
+        </form>
+
+
+
+    </div>
+        <div class="col-lg-6 col-md-12 right-column">
+            <div class="column-content">
+                    <div class="login-identityproviders">
+                        <p class="login-heading text-center">Sign in with</p>
+                            <a class="btn login-identityprovider-btn btn-block " href="https://ilearn.fkyc.edu.hk/auth/oauth2/login.php?id=3&amp;wantsurl=%2F&amp;sesskey=sf1oU9ZJu1">
+                                    <img src="https://www.microsoft.com/favicon.ico" alt="" width="24" height="24">
+                                Microsoft 365
+                            </a>
+                    </div>
+
+                    <div class="login-divider"></div>
+
+                <div class="d-flex mt-2">
+                        <div class="login-languagemenu">
+                            <div class="action-menu moodle-actionmenu" id="action-menu-0" data-enhance="moodle-core-actionmenu">
+                            
+                                    <div class="menubar d-flex " id="action-menu-0-menubar">
+                            
+                                        
+                            
+                            
+                                            <div class="action-menu-trigger">
+                                                <div class="dropdown">
+                                                    <a href="#" tabindex="0" class=" dropdown-toggle icon-no-margin" id="action-menu-toggle-0" aria-label="简体中文 &lrm;(zh_cn)&lrm;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-0-menu">
+                                                        
+                                                        简体中文 &lrm;(zh_cn)&lrm;
+                                                            
+                                                        <b class="caret"></b>
+                                                    </a>
+                                                        <div class="dropdown-menu menu dropdown-menu-right" id="action-menu-0-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-0" role="menu">
+                                                                                                                        <a href="#" class="dropdown-item menu-action" role="menuitem" tabindex="-1" aria-labelledby="actionmenuaction-1">
+                                                            <span class="menu-action-text" id="actionmenuaction-1">简体中文 &lrm;(zh_cn)&lrm;</span>
+                                                    </a>
+                                                                                                                        <a href="https://ilearn.fkyc.edu.hk/login/index.php?lang=zh_tw" class="dropdown-item menu-action" data-lang="zh_tw" lang="zh_tw" role="menuitem" tabindex="-1" aria-labelledby="actionmenuaction-2">
+                                                            <span class="menu-action-text" id="actionmenuaction-2">正體中文 &lrm;(zh_tw)&lrm;</span>
+                                                    </a>
+                                                                                                                        <a href="https://ilearn.fkyc.edu.hk/login/index.php?lang=en" class="dropdown-item menu-action" data-lang="en" lang="en" role="menuitem" tabindex="-1" aria-labelledby="actionmenuaction-3">
+                                                            <span class="menu-action-text" id="actionmenuaction-3">English &lrm;(en)&lrm;</span>
+                                                    </a>
+                                                        </div>
+                                                </div>
+                                            </div>
+                            
+                                    </div>
+                            
+                            </div>
+                        </div>
+                    <button type="button" class="ml-auto btn btn-link" data-modal="alert" data-modal-title-str="[&quot;cookiesenabled&quot;, &quot;core&quot;]" data-modal-content-str="[&quot;cookiesenabled_help_html&quot;, &quot;core&quot;]"><i class="fa fa-question-circle"></i> Cookie通告</button>
+                </div>
+            </div>
+        </div>
+</div></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+
+<div class="d-none">
+    
+    <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://ilearn.fkyc.edu.hk/lib/requirejs.php/1663334055/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://ilearn.fkyc.edu.hk/lib/javascript.php/1663334055/lib/jquery/jquery-3.6.0.min',
+        jqueryui: 'https://ilearn.fkyc.edu.hk/lib/javascript.php/1663334055/lib/jquery/ui-1.13.0/jquery-ui.min',
+        jqueryprivate: 'https://ilearn.fkyc.edu.hk/lib/javascript.php/1663334055/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://ilearn.fkyc.edu.hk/lib/javascript.php/1663334055/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('zh-CN');
+});;
+
+    M.util.js_pending('theme_boost/loader');
+    require(['theme_boost/loader'], function() {
+      M.util.js_complete('theme_boost/loader');
+    });
+;
+
+;
+M.util.js_pending('theme_snap/wcloader'); require(['theme_snap/wcloader'], function(amd) {amd.init("{\"theme_snap\\\/snapce\":[\"https:\\\/\\\/ilearn.fkyc.edu.hk\\\/pluginfile.php\\\/1\\\/theme_snap\\\/vendorjs\\\/snap-custom-elements\\\/snap-ce\"]}"); M.util.js_complete('theme_snap/wcloader');});;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(1, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+
+<script>
+    $(document).ready(function () {
+        let regUsername = /^e[0-9]{6}$/;
+        $(".login-form").submit(() => {
+            if (!regUsername.test($("username"), val())) {
+                $("passwd-alert").css({
+                    "display": "block"
+                })
+                return false;
+            } else {
+                console.log("username correct");
+                return true;
+            }
+        })
+    });
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u6700\u540e\u4fee\u6539","name":"\u540d\u79f0","error":"\u9519\u8bef","info":"\u4fe1\u606f","yes":"\u662f\u7684","no":"\u5426","cancel":"\u53d6\u6d88","confirm":"\u786e\u8ba4","areyousure":"\u60a8\u786e\u5b9a\u5417\uff1f","closebuttontitle":"\u5173\u95ed","unknownerror":"\u672b\u77e5\u9519\u8bef","file":"\u6587\u4ef6","url":"\u7f51\u9875\u5730\u5740","collapseall":"\u5168\u90e8\u6298\u53e0","expandall":"\u5c55\u5f00\u5168\u90e8"},"repository":{"type":"\u7c7b\u578b","size":"\u5927\u5c0f","invalidjson":"\u65e0\u6548\u7684JSON\u5b57\u7b26\u4e32","nofilesattached":"\u6ca1\u6709\u9644\u4ef6","filepicker":"\u6587\u4ef6\u9009\u62e9\u5668","logout":"\u767b\u51fa","nofilesavailable":"\u6ca1\u6709\u53ef\u7528\u6587\u4ef6","norepositoriesavailable":"\u62b1\u6b49\uff0c\u60a8\u4f7f\u7528\u7684\u5bb9\u5668\u90fd\u4e0d\u80fd\u8fd4\u56de\u7b26\u5408\u9700\u8981\u7684\u683c\u5f0f\u7684\u6587\u4ef6\u3002","fileexistsdialogheader":"\u6587\u4ef6\u5df2\u5b58\u5728","fileexistsdialog_editor":"\u60a8\u6b63\u7f16\u8f91\u7684\u6587\u672c\u7684\u9644\u4ef6\u4e2d\u5df2\u7ecf\u6709\u4e00\u4e2a\u540c\u540d\u6587\u4ef6\u3002","fileexistsdialog_filemanager":"\u5df2\u7ecf\u6709\u4e00\u4e2a\u540c\u540d\u6587\u4ef6","renameto":"\u91cd\u547d\u540d\u4e3a\u201c{$a}\u201d","referencesexist":"\u6709 {$a} \u4e2a\u522b\u540d\u6216\u5feb\u6377\u65b9\u5f0f\u5f15\u7528\u6b64\u6587\u4ef6","select":"\u9009\u62e9"},"admin":{"confirmdeletecomments":"\u60a8\u5c06\u5220\u9664\u8bc4\u8bba\uff0c\u786e\u5b9a\u5417\uff1f","confirmation":"\u786e\u8ba4"},"debug":{"debuginfo":"\u8c03\u8bd5\u4fe1\u606f","line":"\u884c","stacktrace":"\u5806\u6808\u8ddf\u8e2a"},"langconfig":{"labelsep":"\uff1a"}};
+//]]>
+</script>
+<script src="main.js"></script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"zh-hans"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random635e5fa5ba10f5'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random635e5fa5ba10f5'); });
+})();
+//]]>
+</script>
+
+</div>
+
+</body></html>
