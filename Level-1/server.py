@@ -1,4 +1,5 @@
 #server.py
+from os import system
 import socket
 import logging
  
@@ -36,5 +37,6 @@ def main():
             logging.warning('Someone left unexcept.')
  
 if __name__ == '__main__':
+    system("flask app.py")
     main()
  
