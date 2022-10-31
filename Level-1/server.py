@@ -1,8 +1,8 @@
-#server.py
 from os import system
 import socket
 import logging
  
+
 def main():
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  # 创建socket对象
  

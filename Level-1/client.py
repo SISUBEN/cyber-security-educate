@@ -1,5 +1,3 @@
-#clinet.py
-from email import message
 import socket
 import threading
 import win32gui

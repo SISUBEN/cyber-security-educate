@@ -1,4 +1,3 @@
-#control.py
 import socket
 import threading
 
