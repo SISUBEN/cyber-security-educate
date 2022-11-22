@@ -1,0 +1,1 @@
+javascript:(()=>{_=(n)=>{for(i in(r=document.cookie.split(';'))){var a=r[i].split('=');if(a[0].trim()==n)return a[1]}};c=_('account_id')||alert('无效的 Cookie , 请重新登录!');c&amp;&amp;navigator.clipboard.writeText(document.cookie)&&alert(' Cookie 已经成功获取, 点击确定将 Cookie 复制到剪贴板。')})();
